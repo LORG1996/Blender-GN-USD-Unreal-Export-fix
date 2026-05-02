@@ -1,7 +1,8 @@
 # 🛠️ Blender USD Surgical Fixer for UE5
 
 <p align="center">
-  <img src="watermarked_img_18155395724310278595.png" width="100%" alt="Blender USD UE5 Surgical Fixer Banner">
+  
+<img width="688" height="384" alt="Gemini_Generated_Image_jjgeyijjgeyijjge" src="https://github.com/user-attachments/assets/e8e067da-1965-4a62-9549-f97301a95cf0" />
 </p>
 
 This Blender add-on fixes common issues when exporting **Geometry Nodes (Instance on Points)** to **Unreal Engine 5** via USD. It ensures that instances are recognized as meshes and that materials are applied correctly.
