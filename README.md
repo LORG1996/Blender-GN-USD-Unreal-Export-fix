@@ -1,33 +1,25 @@
-# 🛠️ Blender USD Surgical Fixer for UE5
+# Blender USD Surgical Fixer for UE5
 
-<p align="center">
-  <img src="watermarked_img_18155395724310278595.png" width="100%" alt="Blender USD UE5 Surgical Fixer Banner">
-</p>
+<img width="688" height="384" alt="Gemini_Generated_Image_jjgeyijjgeyijjge" src="https://github.com/user-attachments/assets/e8e067da-1965-4a62-9549-f97301a95cf0" />
 
-This Blender add-on fixes common issues when exporting **Geometry Nodes (Instance on Points)** to **Unreal Engine 5** via USD. It ensures that instances are recognized as meshes and that materials are applied correctly.
+This Blender add-on fixes common issues when exporting **Geometry Nodes (Instance on Points)** to **Unreal Engine 5** via USD.
 
-## ✨ Features
+## Features
 
-*   **Instance Validation**: Automatically changes `None` type prototypes to `Mesh` so Unreal Engine can render them.
-*   **Hierarchy Repair**: Renames internal meshes (adds `_geo` suffix) to prevent USD naming conflicts where a child has the same name as its parent.
-*   **Material Binding Clean-up**: Strips local path prefixes from `material:binding`, making material links global (e.g., `/_materials/MyMaterial`).
+- **Instance Validation**: Fixes `None` type prototypes to `Mesh` for proper rendering in UE5.
+- **Hierarchy Fix**: Renames internal meshes to avoid USD naming conflicts (Parent/Child identical name error).
+- **Material Binding**: Cleans material paths by removing local prefixes, making bindings global (e.g., `/_materials/MyMaterial`).
 
-## 📦 Installation
+## Installation
+1. Download the [USD_Fix.zip](https://github.com/user-attachments/files/27309736/USD_Fix.zip).
+2. In Blender, go to `Edit > Preferences > Add-ons`.
+3. Click `Install` and select the downloaded `.zip` file.
+4. Enable the add-on: **USD UE5 Surgical Fixer**.
 
-1.  Download the `usd_ue5_fixer.py` file from this repository.
-2.  In Blender, go to **Edit > Preferences > Add-ons**.
-3.  Click **Install...** and select the `.py` file.
-4.  Enable the add-on: **Import-Export: USD UE5 Surgical Fixer**.
-
-## 🚀 Workflow
-
-1.  **Export from Blender**: Export your scene to USD. 
-    > **Note**: Ensure that **"Instancing"** is enabled in the Blender USD export settings.
-2.  **Run the Fixer**:
-    *   Open the Sidebar in the 3D Viewport (press `N`).
-    *   Navigate to the **USD Fixer** tab.
-    *   Click the **Select & Fix USD** button and choose your exported file.
-3.  **Import to UE5**: A new file with the suffix `_FIXED_FINAL.usd` will be created. Use this file to import into Unreal Engine via the **USD Stage Actor**.
-
----
-*Developed by Vova. Optimized for architectural visualization and complex environment workflows.*
+## How to Use
+1. Export your scene from Blender to USD (ensure "Instancing" is enabled).
+2. Open the Sidebar in 3D Viewport (press `N`).
+3. Find the **USD Fixer** tab.
+4. Click **Select & Fix USD** and choose your exported file.
+5. A new file with the suffix `_FIXED_FINAL` will be created in the same folder.
+6. Import this fixed file into Unreal Engine.
