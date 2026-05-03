@@ -11,10 +11,12 @@ This Blender add-on fixes common issues when exporting **Geometry Nodes (Instanc
 - **Material Binding**: Cleans material paths by removing local prefixes, making bindings global (e.g., `/_materials/MyMaterial`).
 
 ## Installation
-1. Download the [USD_Fix.zip](https://github.com/user-attachments/files/27309736/USD_Fix.zip).
-2. In Blender, go to `Edit > Preferences > Add-ons`.
-3. Click `Install` and select the downloaded `.zip` file.
-4. Enable the add-on: **USD UE5 Surgical Fixer**.
+1. Download the [USD_Fix.zip](https://github.com/user-attachments/files/27309736/USD_Fix.zip) and 
+[usd_extract_meshes.py](https://github.com/user-attachments/files/27311525/usd_extract_meshes.py)
+
+3. In Blender, go to `Edit > Preferences > Add-ons`.
+4. Click `Install` and select the downloaded `.zip` file.
+5. Enable the add-on: **USD UE5 Surgical Fixer**.
 
 ## How to Use
 1. Export your scene from Blender to USD (ensure "Instancing" is enabled).
